@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1920">
+    <title>Grato Jewelry</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="img/banner1.svg">
+    </header>
+    <main>
+
+            <div class="selector">
+            <div class="image-container">
+                <img src="img/earrings.svg" alt="earrings">
+                <p>Earrings</p>
+            </div>
+            
+            <div class="image-container">
+                <img src="img/ring.svg" alt="ring">
+                <p>Ring</p>
+            </div>
+            </div>
+            <div class="order">
+                <p>Buy now with 50% off:</p>
+                <div class="timer-container">
+                    <div class="hours">
+                        <p id="hours">00</p>
+                        <p>hours</p>
+                    </div>
+                    <div class="minutes">
+                        <p id="minutes">00</p>
+                        <p>minutes</p>
+                    </div>
+                    <div class="seconds">
+                        <p id="seconds">00</p>
+                        <p>seconds</p>
+                    </div>
+                </div>
+                <br>
+                <button onclick="order()">Order now</button>
+            </div>
+        <div class="second-block">
+
+        </div>
+        <div class="banner2">
+            <img src="img/banner2.svg">
+            <p class="b_t">DISCOVER MORE</p>
+            <p class="m_t">about Grato Jewelry</p>
+            <p class="s_t">At Grato Jewelry, we are passionate about craftsmanship, elegance, and timeless beauty. Established with a vision to offer discerning customers exquisite jewelry pieces that evoke emotion and celebrate life's special moments, we pride ourselves on our commitment to quality, creativity, and exceptional service.</p>
+        </div>
+        <div class="feedback">
+            <img src="img/feedback.svg">
+            <br>
+            <form id="contact">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email"><br>
+                <textarea></textarea><br>
+                <button onclick="confirmOrder()">Submit</button>
+            </form>
+            <div class="callus">
+                <p class="m_t">CALL US</p>
+                <p class="data">+38 (050) 505-50-50</p>
+
+                <p class="m_t">LOCATION</p>
+                <p class="data">Ukraine, Kharkiv, Nauki street 12, 61000</p>
+
+                <p class="m_t">HOURS</p>
+                <p class="data">Mon - Fri: 9:00 - 20:00</p>
+                <p class="data">Sat: 10:00 - 20:00</p>
+                <p class="data">Sun: 12:00 - 18:00</p>
+            </div>
+        </div>
+        <div class="partners">
+            <p>PARTNERS</p>
+            <img src="img/partners.png" alt="partners logo">
+        </div>
+    </main>
+    <footer>
+        <br>
+        <p>© 2024 by Grato Jewelry. All rights reserved.   <a href="">Privacy Policy</a></p>
+    </footer>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <h2>Order Form</h2>
+          <form id="orderForm">
+              <label for="name">Name:</label><br>
+              <input type="text" id="name" name="name"><br>
+              <label for="phone">Phone:</label><br>
+              <input type="text" id="phone" name="phone"><br><br>
+              <input type="button" value="Confirm" onclick="confirmOrder()">
+          </form>
+        </div>
+      </div>
+      
+      <div id="successMessage" class="success-message">Success</div>
+    <script src="main.js"></script>
+</body>
+</html>

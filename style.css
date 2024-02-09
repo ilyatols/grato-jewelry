@@ -1,0 +1,251 @@
+@font-face {
+    font-family: Alumni;
+    src: url(fonts/AlumniSans-Regular.ttf);
+    font-size: 32px;
+  }
+* {
+    font-family: 'Alumni', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+body {
+    margin:0;
+    padding:0;
+}
+
+header img {
+    width: 100%;
+}
+.selector {
+    width: 100%;
+}
+.image-container {
+    float: left;
+    margin-left: -40px;
+    margin-top: 50px;
+    text-align: center;
+    width: 50%;
+}
+
+.image-container:first-child {
+   margin-top: 80px;
+}
+.image-container:last-child {
+    margin-left: -30%;
+}
+
+.image-container:first-child img {
+    width: 35%;
+}
+
+.image-container:last-child img {
+    width: 45%;
+}
+
+.image-container p {
+    margin: 0;
+    font-size: 24px;
+}
+
+.order {
+    position: absolute;
+    right: 7%;
+    text-align: center;
+    font-size: 48px;
+    margin-top: 40px;
+    margin-bottom: -20px;
+}
+
+
+.hours, .minutes, .seconds {
+    float: left;
+    margin: 0px 10px;
+    text-align: center;
+}
+
+.hours p, .minutes p, .seconds p {
+    margin: 5px 0;
+}
+
+.order button{
+    margin-top: 10px;
+    border: none;
+    width: 100%;
+    height: 70px;
+    border-radius: 15px;
+    background-color: #493102;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.second-block{
+    height: 500px;
+}
+
+.banner2 img {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+}
+
+.banner2 p{
+    text-align: center;
+}
+
+.b_t {
+    font-size: 48px;
+    padding-top: 7%;
+    margin-bottom: 0;
+}
+
+.m_t {
+    margin-top: 0;
+    font-size: 36px;
+}
+
+.s_t {
+    width: 30%;
+    text-align: center;
+    margin: auto;
+    font-size: 26px;
+}
+
+.feedback img {
+    margin-top: 20%;
+    width: 100%;
+}
+
+.feedback .m_t {
+    margin: 0;
+    padding: 0;
+}
+
+.data{
+    font-size: 24px;
+}
+.callus {
+    margin-top: 10%;
+    margin-left: 8%;
+}
+
+#contact {
+    position: absolute;
+    background-color: #F9F7F4;
+    padding: 20px;
+    width: 60%;
+    right: 5%;
+    margin-top: 6%;
+    text-align: center;
+}
+
+#contact button {
+    background-color: #493102;
+    border-radius: 20px;
+    border: none;
+    color: white;
+}
+
+#contact textarea{
+    resize: none;
+    margin-top: 10px;
+    width: 97%;
+    height: 400px;
+}
+
+#contact input {
+    height: 70px;
+    width: 45%;
+    font-size: 24px;
+    padding-left: 10px;
+}
+
+#contact input[type=email] {
+    margin-left: 50px;
+}
+
+#contact button {
+    margin-top: 30px;
+    width: 560px;
+    height: 70px;
+    font-size: 24px;
+}
+
+
+#contact input, #contact textarea {
+    border: none;
+    background-color: white;
+}
+
+.partners img {
+    width: 95%;
+    margin-left: 2.5%;
+}
+
+.partners {
+    text-align: center;
+}
+
+.partners p {
+    font-size: 36px;
+    margin-top: 15%;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #f4f4f4; /* Цвет фона формы */
+    margin: 20% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3); /* Тень */
+}
+
+.modal input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Цвет рамки */
+    border-radius: 5px;
+    background-color: #f8f8f8; /* Цвет поля ввода */
+}
+
+.modal input[type=button] {
+    background-color: #493102; /* Зеленый цвет кнопки */
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.modal input[type=button]:hover {
+    background-color: #45a049;
+}
+
+.success-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4CAF50; /* Зеленый цвет сообщения об успехе */
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    display: none;
+    z-index: 2;
+}
+
